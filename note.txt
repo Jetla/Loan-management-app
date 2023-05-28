@@ -1,1 +1,2 @@
 ECHO is on.
+this repository stores front end related files and folders of html,css,typescript.
