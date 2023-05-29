@@ -1,0 +1,131 @@
+<html>
+    <body>
+<main>
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-7">
+
+                <div class="card shadow-lg border-0 rounded-lg mt-5">
+
+                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Add Loan</h3></div>
+
+                    <div class="card-body">
+                       
+
+                        <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+
+                            <div class="form-row">
+
+                                <div class="col-md-6">
+
+                                    <div class="form-group">
+
+                                        <label class="small mb-1" for="inputFirstName">Loan Amount</label>
+
+                                        <input class="form-control py-4" name="LoanAmount" formControlName="loanAmt" type="number" placeholder="Enter Loan Amount" />
+
+                                    </div>
+                                    <span class="alert alert-danger" *ngIf="addForm.controls['loanAmt'].hasError('required')&&addForm.controls['loanAmt'].touched">
+                                        Loan Amount can not be empty
+                                    </span>
+                                 <!--   <div class="alert alert-danger" *ngIf="createForm.controls['firstName'].hasError('minlength')">
+                                        Minimum three characters should be used for the first name
+                                    </div>
+                                    <div class="alert alert-danger" *ngIf="createForm.controls['firstName'].hasError('maxlength')">
+                                        Maximum fifteen characters should be used for the first name
+                                    </div>
+                                -->
+
+
+                                </div>
+
+                                <div class="col-md-6">
+
+                                    <div class="form-group">
+
+                                        <label class="small mb-1" for="inputLastName">Loan Type</label>
+
+                                        <input class="form-control py-4" name="LoanType" formControlName="loanType" type="text" placeholder="Enter loan Type"  />
+
+                                    </div>
+                                    <span class="alert alert-danger" *ngIf="addForm.controls['loanType'].hasError('required')&&addForm.controls['loanType'].touched">
+                                      Loan Type can not be empty
+                                    </span>
+                                   <!-- <div class="alert alert-danger" *ngIf="createForm.controls['lastName'].hasError('minlength')">
+                                        Minimum three characters should be used for the Last name
+                                    </div>
+                                    <div class="alert alert-danger" *ngIf="createForm.controls['lastName'].hasError('maxlength')">
+                                        Maximum fifteen characters should be used for the Last name
+                                    </div>
+                                -->
+                                    
+
+                                </div>
+                                <div class="col-md-6">
+
+                                    <div class="form-group">
+
+                                        <label class="small mb-1" for="inputLastName">Duration</label>
+
+                                        <input class="form-control py-4" name="duration" formControlName="duration" type="number" placeholder="Enter duration"   />
+
+                                    </div>
+                                    <span class="alert alert-danger" *ngIf="addForm.controls['duration'].hasError('required')&&addForm.controls['duration'].touched">
+                                        Duration can not be empty
+                                    </span>
+
+                                </div>
+                                <div class="col-md-6">
+
+                                    <div class="form-group">
+
+                                        <label class="small mb-1" for="inputLastName">Monthly EMI</label>
+
+                                        <input class="form-control py-4" name="MonthlyEmi" formControlName="monthlyEMI" type="number" placeholder="Enter monthly EMI" />
+
+                                    </div>
+                                    <span class="alert alert-danger" *ngIf="addForm.controls['monthlyEMI'].hasError('required')&&addForm.controls['monthlyEMI'].touched">
+                                        Monthly EMI can not be empty
+                                    </span>
+                                  <!--  <div class="alert alert-danger" *ngIf="createForm.controls['phone'].hasError('maxlength')">
+                                        Maximum ten characters should be used for the phone number
+                                    </div>
+                                -->
+
+                                </div>
+                                
+                            </div>
+                        <div class="col-md-6">
+
+                            <div class="form-group">
+
+                                <label class="small mb-1" for="inputEmailAddress">User Id</label>
+
+                                <input class="form-control py-4" name="Id" formControlName="id" type="number" aria-describedby="emailHelp" placeholder="Enter User Id"  />
+
+                            </div>
+                            <span class="alert alert-danger" *ngIf="addForm.controls['id'].hasError('required')&&addForm.controls['id'].touched">
+                                User Id can not be empty
+                            </span>
+                           <!-- <div class="alert alert-danger" *ngIf="createForm.controls['email'].hasError('email')">Email must be a valid email address</div>
+                        
+                    --></div>
+
+                           <!-- <div class="form-group mt-4 mb-0">
+                                <input type="submit" text="createAcount" class="btn-btn-success">
+                            </div>-->
+                            <div class="text-center">
+                            <button class="btn btn-lg btn-primary btn-login text-uppercase fw-bold mb-2 " type="submit">ADD LOAN</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
