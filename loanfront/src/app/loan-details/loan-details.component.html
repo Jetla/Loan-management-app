@@ -1,0 +1,58 @@
+
+<app-user></app-user>
+<html>
+  <body>
+<main>
+  <div class="form-group">
+
+    <label class="small mb-1" for="inputEmailAddress">Enter customer Id</label>
+
+    <input class="form-control py-4" id="inputEmailAddress" type="email" aria-describedby="emailHelp" name="id" placeholder="Enter Customer Id" [(ngModel)]="id"/>
+
+
+<div class="form-group mt-4 mb-0"><a class="btn btn-primary btn-block" (click)="onSearch()">Search Loan</a></div>
+
+</div>
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg">
+
+                <div class="card shadow-lg border-0 rounded-lg mt-5">
+
+                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Loan Details</h3></div>
+
+                    <div class="card-body">
+<table class="table table-striped table-sm">
+    <thead>
+      <tr>
+       <th scope="col">S.no</th>
+      <!--   <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Loan Number</th>-->
+        <th scope="col">Loan Amount</th>
+        <th scope="col">Loan Type</th>
+        <th scope="col">Duration</th>
+        <th scope="col">Monthly EMI</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let loandata of LoanArray">
+        <th scope="row">{{loandata.loanId}}</th>
+        <th scope="row">{{loandata.loanAmt}}</th>
+        <th scope="row">{{loandata.loanType}}</th>
+        <th scope="row">{{loandata.duration}}</th>
+        <th scope="row">{{loandata.monthlyEMI}}</th>
+      </tr>
+    </tbody>
+</table>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>

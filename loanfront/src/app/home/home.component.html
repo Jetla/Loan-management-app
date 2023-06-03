@@ -1,95 +1,23 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-
-  <body> 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-     <div class="container-fluid">
-      <!-- <i class="fa-solid fa-landmark"></i> -->
-       <h1 class="navbar-brand  text-uppercase text-center" ><i class=" fa-2x fa-solid fa-landmark"></i> </h1>
-       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
-       </button>
-       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-           <li class="nav-item">
-             <a class="nav-link active btn-block" aria-current="page" href="/home">Home</a>
-           </li>
-           <li> <a class="nav-link active" aria-current="page" ></a></li>
-           <li class="nav-item">
-             <a class="nav-link btn btn btn-block" href="/home">Search Loan</a>
-           </li>
-      
-         </ul>
-       </div>
-         
-           <ul class="nav navbar-nav navbar-right">
-             <div class="form-group mt-4 mb-0"><a class="btn btn-primary btn-block" href="/login">Admin LogIn</a></div>
-           </ul>
-         
-       </div>
-     </nav>
-     
- 
-     <div class="container-fluid ps-md-0">
-         <div class="row g-0">
-           <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
-           <div class="col-md-8 col-lg-6">
-             <div class="login d-flex align-items-center py-5">
-               <div class="container">
-                 <div class="row">
-                   <div class="col-md-9 col-lg-8 mx-auto dot">
-                     <h3 class="login-heading mb-4 ">User Login </h3>
-       
-                     <!-- Sign In Form -->
-                     <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
-                       <div class="form-floating mb-3">
-                         <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }"  id="inputEmail4" [(ngModel)]="user.email">
-                         <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
-                           <div *ngIf="f.email.errors.required">Email is required</div>
-                           <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
-                        </div >
-                         <label for="floatingInput">Email address</label>
-                       </div>
-                       <div class="form-floating mb-3">
-                         <input type="password" class="form-control" id="floatingPassword" placeholder="Password" formControlName="password"[ngClass]="{ 'is-invalid': submitted && f.password.errors }" id="inputPassword4" [(ngModel)]="user.password">
-                         <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
-                           <div *ngIf="f.password.errors.required">Password is required</div>
-                        </div>
-                         <label for="floatingPassword">Password</label>
-                       </div>
-       
-                       <div class="form-check mb-3">
-                         <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck">
-                         <label class="form-check-label" for="rememberPasswordCheck">
-                           Remember password
-                         </label>
-                       </div>
-       
-                       <div class="d-grid">
-                         <button class="btn btn-lg btn-primary btn-login text-uppercase fw-bold mb-2" type="submit">Sign in</button>
-                         <div class="text-center">
-                           <a class="small" href="#">Forgot password?</a>
-                         </div>
-                       </div>
-                       <div class="card-footer text-center">
-                         <div class="small"><a href="/create">Need an account? Sign up!</a></div>
-                       </div>
-                     </form>
-                   </div>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-       </body>
-
-</html>
+<div class="bg"><br>
+  <header>
+    <h4><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-p-square" viewBox="0 0 16 16">
+      <path d="M5.5 4.002h2.962C10.045 4.002 11 5.104 11 6.586c0 1.494-.967 2.578-2.55 2.578H6.784V12H5.5V4.002Zm2.77 4.072c.893 0 1.419-.545 1.419-1.488s-.526-1.482-1.42-1.482H6.778v2.97H8.27Z"/>
+      <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2Zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2Z"/>
+    </svg></h4>
+    <nav class="navigation">
+      <a routerLink="/login"><b>Admin LogIn</b></a>
+      <a routerLink="/userlogin"><b>User LogIn</b></a>
+      <a routerLink="/create"><b>Sign Up</b></a>
+      <a routerLink="/about"><b>About</b></a>
+      <a routerLink="/contact"><b>Contact</b></a>
+    </nav>
+  </header>
+  
+  <br><br><br>
+  <hr>
+  <article>
+    <h2 style="text-align: center;">Loan Management System</h2>
+    
+  </article>
+  </div>

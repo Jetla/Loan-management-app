@@ -39,7 +39,7 @@ onSubmit()
   this.issueService.addLoan(loan).subscribe((data:any)=>{console.log()},
   error=>console.log(error));
   alert("added loan details successfuly");
-  // this.router.navigate(['adminLoanDetails']);
+  this.router.navigate(['adminLoanDetails']);
 }
 ngOnInit():void{
 

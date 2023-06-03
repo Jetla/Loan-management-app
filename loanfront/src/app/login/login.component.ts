@@ -21,11 +21,11 @@ onSubmit() {
       return;
   }
   //True if all the fields are filled
-  if(this.registerForm.email=="venkey@gmail.com")
-  {if(this.registerForm.password=="venkey@034"){
+  if(this.registerForm.email=="manideep@gmail.com")
+  {if(this.registerForm.password=="manideep@123"){
   if(this.submitted)
   {
-    alert("admin Login successfully");
+    alert("Admin Login successfully!!!");
     this.router.navigate(['admin']);
   }
 }else{
