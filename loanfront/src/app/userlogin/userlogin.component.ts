@@ -30,6 +30,8 @@ export class UserloginComponent {
           this.router.navigate(['user']);
         }
         console.log(data)
+        this.service.data=data;
+        console.log(this.service.data)
     }else{
       alert("Email Id and password was incorrect");
     }},

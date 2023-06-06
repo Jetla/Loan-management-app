@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
-import { ApplyLoanComponent } from './apply-loan/apply-loan.component';
 import { UserComponent } from './user/user.component';
 import { LoanDetailsComponent } from './loan-details/loan-details.component';
 import { AdminComponent } from './admin/admin.component';
@@ -19,12 +18,14 @@ import { ModifyloanComponent } from './modifyloan/modifyloan.component';
 import { CommonModule } from '@angular/common';
 import { UserServiceService } from './user-service.service';
 import { UserloginComponent } from './userlogin/userlogin.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { LoanInfoComponent } from './loan-info/loan-info.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent,
-    ApplyLoanComponent,
     UserComponent,
     LoanDetailsComponent,
     AdminComponent,
@@ -32,7 +33,10 @@ import { UserloginComponent } from './userlogin/userlogin.component';
     AdminloandetailsComponent,
     CreateUserComponent,
     ModifyloanComponent,
-    UserloginComponent
+    UserloginComponent,
+    AboutComponent,
+    ContactComponent,
+    LoanInfoComponent
   ],
   imports: [
     BrowserModule,

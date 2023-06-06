@@ -10,11 +10,17 @@ import { LoginComponent } from './login/login.component';
 import { ModifyloanComponent } from './modifyloan/modifyloan.component';
 import { UserComponent } from './user/user.component';
 import { UserloginComponent } from './userlogin/userlogin.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { LoanInfoComponent } from './loan-info/loan-info.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
   {path:'login',component:LoginComponent},
   {path:'home',component:HomeComponent},
+  {path:'about',component:AboutComponent},
+  {path:'loanInfo',component:LoanInfoComponent},
+  {path:'contact',component:ContactComponent},
   {path:'userlogin',component:UserloginComponent},
   {path:'user',component:UserComponent},
   {path:'loanDetails',component:LoanDetailsComponent},

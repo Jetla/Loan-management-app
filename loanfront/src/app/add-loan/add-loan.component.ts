@@ -36,10 +36,16 @@ onSubmit()
   loan.monthlyEMI=this.addForm.controls['monthlyEMI'].value;
   loan.customer.id=this.addForm.controls['id'].value;
   console.log(loan);
-  this.issueService.addLoan(loan).subscribe((data:any)=>{console.log()},
+  
+  this.issueService.addLoan(loan).subscribe((data:any)=>{ this.submitted = true;
+    console.log()   },
   error=>console.log(error));
+  if (this.submitted){
+
+  
   alert("added loan details successfuly");
-  this.router.navigate(['adminLoanDetails']);
+  this.router.navigate(['loanDetails']);
+}
 }
 ngOnInit():void{
 

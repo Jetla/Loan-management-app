@@ -114,6 +114,7 @@ button {
  height: 22px;
 }
 
-/* button:hover {
- transform: scale(1.02);
-} */
+form-floating mb-3{
+  position: relative;
+
+}

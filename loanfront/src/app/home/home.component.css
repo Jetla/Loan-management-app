@@ -33,6 +33,39 @@ margin-top: 8px;
   font-weight: 400;
   margin-left: 40px;
 }
+a{
+position:relative;
+text-decoration:none;
+font-family: 'Poppins',sans-serif;
+color:azure;
+font-size:18px;
+letter-spacing:0.5px;
+padding:0 10px;
+}
+a:after{
+  content:"";
+  position:absolute;
+  height:3px;
+  width:100%;
+  left:0;
+  bottom: -10px;
+}
+a:after{
+  content:"";
+  position: absolute;
+  background-color: rgb(19, 18, 18);
+  height: 3px;
+  width: 0;
+  left:0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+a:hover{
+  color:aliceblue;
+}
+a:hover:after{
+width:100%
+}
 h4{
   margin-left: 30px;
 
