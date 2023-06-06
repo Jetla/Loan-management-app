@@ -1,0 +1,60 @@
+.bg{
+
+    background-color: white;
+   height: 100%;
+   width: 100%;
+   background-size: cover;
+ }
+ 
+ 
+ .parent {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 0px ;
+     grid-column-gap: 0px;
+     grid-row-gap: 0px; 
+     height: 0px;
+     width: auto;
+     }
+     
+     
+     .div1 { grid-area: 1 / 1 / 2 / 2; }
+     .div2 { grid-area: 1 / 1 / 2 / 2; }
+     .div3 { grid-area: 1 / 2 / 2 / 3; }
+ 
+ 
+     /* nav */
+ 
+ 
+     nav {
+         background-color: #333;
+         height: 50px;
+       }
+       
+       ul {
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         overflow: hidden;
+         height: 100%;
+       }
+       
+       li {
+         float: left;
+         height: 100%;
+       }
+       
+       a {
+         display: block;
+         color: white;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+       }
+       
+       .active {
+         background-color: #4CAF50;
+       }
+       .div3{
+        font-size: large;
+       }

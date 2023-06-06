@@ -1,0 +1,236 @@
+/* .bg{
+  bac
+} */
+
+/* input */
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+   
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .group {
+    position: relative;
+  }
+  
+  .form .group label {
+    font-size: 14px;
+    color: rgb(99, 102, 102);
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: #fff;
+    transition: all .3s ease;
+  }
+  
+  .form .group input,
+  .form .group textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    outline: 0;
+    width: 100%;
+    background-color: transparent;
+  }
+  
+  .form .group input:placeholder-shown+ label, .form .group textarea:placeholder-shown +label {
+    top: 10px;
+    background-color: transparent;
+  }
+  
+  .form .group input:focus,
+  .form .group textarea:focus {
+    border-color: orangered;
+  }
+  
+  .form .group input:focus+ label, .form .group textarea:focus +label {
+    top: -10px;
+    left: 10px;
+    background-color: #fff;
+    color: orangered;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .form .group textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .form button {
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 140px;
+  }
+  
+  .form button:hover {
+    background-color: orangered;
+  }
+  
+  
+  /* logos */
+  
+  .social-media {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .social-media a {
+      display: inline-block;
+      margin: 10px;
+  }
+  
+  .social-media img {
+      width: 30px;
+      height: 30px;
+      transition: opacity 0.2s ease-in-out;
+  }
+  
+  .social-media img:hover {
+      opacity: 0.7;
+  }
+  
+  
+  /* subscride */
+  
+  .input-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 290px;
+  }
+  
+  .input-container > span,
+  .input-container .input {
+    white-space: nowrap;
+    display: block;
+  }
+  
+  .input-container > span,
+  .input-container .input:first-child {
+    border-radius: 6px 0 0 6px;
+  }
+  
+  .input-container > span,
+  .input-container .input {
+    border-radius: 0 6px 6px 0;
+  }
+  
+  .input-container > span,
+  .input-container .input {
+    margin-left: -1px;
+  }
+  
+  .input-container .input {
+    position: relative;
+    z-index: 1;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .input-container span {
+    text-align: center;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 25px;
+    color: white;
+    background: black;
+    border: 1px solid black;
+    font-weight: bold;
+    transition: background 0.3s ease, border 0.3s ease, color 0.3s ease;
+  }
+  
+  .input-container:focus-within > span {
+    color: #fff;
+    background-color: orangered;
+    border-color: orangered;
+  }
+  
+  .input {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+    border-radius: 6px;
+    /* webkit-appearance: none; */
+    color: black;
+    border: 1px solid  black;
+    background: #fff;
+    transition: border 0.3s ease;
+  }
+  
+  .input::placeholder {
+    color: black;
+  }
+  
+  .input:focus {
+    outline: none;
+    border-color: orangered;
+  }
+  
+  
+  /* nav */
+  
+  
+  nav {
+    background-color: #333;
+    height: 50px;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+  }
+  
+  li {
+    float: left;
+    height: 100%;
+  }
+  
+  a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+  img{
+    width:100%;
+  }
